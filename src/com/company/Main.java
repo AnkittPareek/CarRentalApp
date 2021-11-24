@@ -10,11 +10,11 @@ public class Main {
 
         System.out.println("Welcome to Alpha Rentals. \n" +
                 "Do you want the car in Mumbai? Y/N");
-        String cityCheck = babulal.nextLine();
+        char cityCheck = babulal.nextLine().charAt(0);
 
         // Checking if the car is requested for mumbai.
 
-        if (cityCheck.equals("Y") || cityCheck.equals("y")) {
+        if (cityCheck == 89 || cityCheck == 121 ){
             System.out.println("How many hours do you need the car for?");
             hours = babulal.nextInt();
             bill = hours * 100;
